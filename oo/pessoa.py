@@ -3,7 +3,7 @@ class Pessoa:
     # se o atributo for "padrao" para todos objetos, entao passa a ser atributo de CLasse
     documento = 'cpf'
     # esse atributo pode ser sobreposto, e nessa caso ele passa a buscar o valor no objeto instanciado
-
+    # aula 11 do primeiro modulo
     # para criar atributos, eu uso o double init:
     def __init__(self ,*filhos ,nome=None ,idade=25):
         self.idade = idade

@@ -2,6 +2,7 @@ class Pessoa:
     # criar atributo de classe / atributo default / atributo padrao = nao migram para objetos filhos
     # se o atributo for "padrao" para todos objetos, entao passa a ser atributo de CLasse
     documento = 'cpf'
+
     # esse atributo pode ser sobreposto, e nessa caso ele passa a buscar o valor no objeto instanciado
     # aula 11 do primeiro modulo
     # para criar atributos, eu uso o double init:
@@ -29,7 +30,7 @@ if __name__ == '__main__':
     print(f'O objeto {luciano.nome} agora tem sobrenome = {luciano.sobrenome} ! So esse objeto foi alterado')
     # acessando os elementos do objeto
     print(luciano.__dict__)
-    print(renzo.__dict__ ,' => Observe que esse objeto possui menor numero de elementos!')
+    print(renzo.__dict__, ' => Observe que esse objeto possui menor numero de elementos!')
     print('Agora vou remover o atributo filho')
     del luciano.filhos
     print(luciano.__dict__)

@@ -4,10 +4,7 @@ class Motor:
     def acelerar(self):
         self.velocidade += 1
     def frear(self):
-        if self.velocidade -2 < 0:
-            self.velocidade = 0
-        else:
-            self.velocidade - 2
+        self.velocidade = max(0, self.velocidade) # maior valor entre os dois
 
 
 if __name__ == '__main__':
@@ -24,3 +21,8 @@ if __name__ == '__main__':
     print(motor.velocidade)
     motor.frear()
     print(motor.velocidade)
+
+"""
+    >>> motor = Motor()
+    >>> motor.acelerar()
+"""
